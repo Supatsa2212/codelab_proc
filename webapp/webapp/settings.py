@@ -12,15 +12,16 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 import os
 #from pathlib import Path
 
-#Build paths inside the project like this: BASE_DIR / 'subdir'.
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
 #BASE_DIR = Path(__file__).resolve().parent.parent
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-eh08)-cg=1y%&jb&3u*ljc_re_s!^01kk*k#j3gk@389a=sgv@'
+SECRET_KEY = 'django-insecure-aru#w!zp9v@x-rtjkp0x*=6!8&nd$c_11ti&i$2-*yrse!@%81'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-     'main',
+    'main',# own app
     'corsheaders',
 ]
 
@@ -139,7 +140,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
-
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
